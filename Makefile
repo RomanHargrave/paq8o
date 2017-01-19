@@ -6,6 +6,9 @@ clean:
 	-rm bin/paq7asm-x86_64.o bin/paq7asmsse.o bin/paq7asm.o  
 	-rm bin/paq8o
 
+install: bin/paq8o
+	install -s bin/paq8o /usr/local/bin
+
 #----------------------------------------------------------
 # No idea if these two build correctly on a 64bit system
 bin/paq7asm.o: bin/ 
