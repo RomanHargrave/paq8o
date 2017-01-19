@@ -3461,7 +3461,7 @@ int expand(String& archive, String& s, const char* fname, int base) {
 // To compress to file1.paq8o: paq8o [-n] file1 [file2...]
 // To decompress: paq8o file1.paq8o [output_dir]
 int main(int argc, char** argv) {
-  bool pause=argc<=2;  // Pause when done?
+  bool pause=false;  // Pause when done?
   try {
 
     // Get option
